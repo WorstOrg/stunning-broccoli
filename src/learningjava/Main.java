@@ -13,9 +13,6 @@ import java.util.Scanner;
 @SuppressWarnings("unused")
 
 public class Main {
-
-	// when u come back after 1 and half month and see no comments be like...
-	// read the documentation!!! + trying as best to add coments so sry.
 	public static void main(String[] args) {
 
 		ImageIcon image = new ImageIcon("cool.png"); // setting a image so that a label can use it as an image
@@ -32,15 +29,16 @@ public class Main {
 		label.setIcon(image); // setting a image from a variable. (we declared this early on.)
 		label.setBorder(border); // setting a border from a variable. (we declared this early on.)
 		label.setVerticalAlignment(JLabel.CENTER); // set whole label position of vertical this is used for images.
-		label.setHorizontalAlignment(JLabel.CENTER);
+		label.setHorizontalAlignment(JLabel.CENTER); // set whole label position of horizantal this is used for images.
 
-		JFrame mainframe = new JFrame();
-		mainframe.setTitle("TestFrame");
-		mainframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		mainframe.setSize(700, 700);
-		mainframe.setVisible(true);
-		mainframe.getContentPane().setBackground(Color.DARK_GRAY);
-		mainframe.add(label);
+		JFrame mainframe = new JFrame(); // creating a frame or screen of the app
+		mainframe.setTitle("TestFrame"); // title of the frane
+		mainframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // if you do not set this to exit on close it will
+																	// remain a background proccess
+		mainframe.setSize(700, 700); // size(resolution) of the app/frame
+		mainframe.setVisible(true); // setting its visibility to true otherwise will not show.
+		mainframe.getContentPane().setBackground(Color.DARK_GRAY); // setting background colour of screen of app/frame
+		mainframe.add(label); // adding a label
 
 	}
 }
