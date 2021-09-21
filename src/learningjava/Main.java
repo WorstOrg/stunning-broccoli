@@ -6,7 +6,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.border.Border;
-
 import java.awt.Color;
 import java.awt.Font;
 import java.util.Scanner;
@@ -19,20 +18,20 @@ public class Main {
 	// read the documentation!!! + trying as best to add coments so sry.
 	public static void main(String[] args) {
 
-		ImageIcon image = new ImageIcon("cool.png");
+		ImageIcon image = new ImageIcon("cool.png"); // setting a image so that a label can use it as an image
 
-		Border border = BorderFactory.createLineBorder(Color.PINK, 3);
+		Border border = BorderFactory.createLineBorder(Color.GREEN, 3); // a border line cuz idk
 
-		JLabel label = new JLabel();
-		label.setText("Bro, are you bored?");
-		label.setForeground(Color.WHITE);
-		label.setFont(new Font("MV Boli", Font.PLAIN, 50));
-		label.setIconTextGap(50);
-		label.setHorizontalTextPosition(JLabel.CENTER);
-		label.setVerticalTextPosition(JLabel.TOP);
-		label.setIcon(image);
-		label.setBorder(border);
-		label.setVerticalAlignment(JLabel.CENTER);
+		JLabel label = new JLabel(); // creating a label a label is text + img or only text
+		label.setText("You bored broh?"); // sets text to the string in the "these marks"
+		label.setForeground(Color.WHITE); // sets font colour
+		label.setFont(new Font("MV Boli", Font.PLAIN, 50)); // changes font
+		label.setIconTextGap(50); // gives gap between image and text negative numbers are closer.
+		label.setHorizontalTextPosition(JLabel.CENTER); // sets text position of horizantal
+		label.setVerticalTextPosition(JLabel.TOP); // sets text position of vertical
+		label.setIcon(image); // setting a image from a variable. (we declared this early on.)
+		label.setBorder(border); // setting a border from a variable. (we declared this early on.)
+		label.setVerticalAlignment(JLabel.CENTER); // set whole label position of vertical this is used for images.
 		label.setHorizontalAlignment(JLabel.CENTER);
 
 		JFrame mainframe = new JFrame();
