@@ -30,6 +30,9 @@ public class Main {
 		label.setBorder(border); // setting a border from a variable. (we declared this early on.)
 		label.setVerticalAlignment(JLabel.CENTER); // set whole label position of vertical this is used for images.
 		label.setHorizontalAlignment(JLabel.CENTER); // set whole label position of horizantal this is used for images.
+		label.setBackground(Color.GREEN); // background color of label only
+		label.setBounds(0, 0, 650, 700); // bounds of label
+		label.setOpaque(true); // gotta set this shit for background color
 
 		JFrame mainframe = new JFrame(); // creating a frame or screen of the app
 		mainframe.setTitle("TestFrame"); // title of the frane
@@ -39,6 +42,7 @@ public class Main {
 		mainframe.setVisible(true); // setting its visibility to true otherwise will not show.
 		mainframe.getContentPane().setBackground(Color.DARK_GRAY); // setting background colour of screen of app/frame
 		mainframe.add(label); // adding a label
+		mainframe.setLayout(null);
 
 	}
 }
