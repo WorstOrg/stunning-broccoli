@@ -5,6 +5,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.swing.JPanel;
 import javax.swing.border.Border;
 import java.awt.Color;
 import java.awt.Font;
@@ -18,6 +19,8 @@ public class Main {
 		ImageIcon image = new ImageIcon("cool.png"); // setting a image so that a label can use it as an image
 
 		Border border = BorderFactory.createLineBorder(Color.GREEN, 3); // a border line cuz idk
+
+		JPanel panel = new JPanel();
 
 		JLabel label = new JLabel(); // creating a label a label is text + img or only text
 		label.setText("You bored broh?"); // sets text to the string in the "these marks"
