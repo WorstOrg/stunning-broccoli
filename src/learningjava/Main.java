@@ -31,18 +31,18 @@ public class Main {
 		label.setVerticalAlignment(JLabel.CENTER); // set whole label position of vertical this is used for images.
 		label.setHorizontalAlignment(JLabel.CENTER); // set whole label position of horizantal this is used for images.
 		label.setBackground(Color.GREEN); // background color of label only
-		label.setBounds(0, 0, 650, 700); // bounds of label
+		label.setBounds(0, 0, 635, 635); // bounds of label
 		label.setOpaque(true); // gotta set this shit for background color
 
 		JFrame mainframe = new JFrame(); // creating a frame or screen of the app
 		mainframe.setTitle("TestFrame"); // title of the frane
 		mainframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // if you do not set this to exit on close it will
 		// remain a background proccess
-		mainframe.setSize(700, 700); // size(resolution) of the app/frame
+		mainframe.setSize(1200, 800); // size(resolution) of the app/frame
 		mainframe.setVisible(true); // setting its visibility to true otherwise will not show.
 		mainframe.getContentPane().setBackground(Color.DARK_GRAY); // setting background colour of screen of app/frame
 		mainframe.add(label); // adding a label
-		mainframe.setLayout(null);
+		mainframe.setLayout(null); // setting the bounds/layout
 
 	}
 }
