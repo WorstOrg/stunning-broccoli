@@ -21,6 +21,7 @@ public class Main {
 		Border border = BorderFactory.createLineBorder(Color.GREEN, 3); // a border line cuz idk
 
 		JPanel panel = new JPanel();
+		panel.setBackground(Color.GREEN);
 
 		JLabel label = new JLabel(); // creating a label a label is text + img or only text
 		label.setText("You bored broh?"); // sets text to the string in the "these marks"
