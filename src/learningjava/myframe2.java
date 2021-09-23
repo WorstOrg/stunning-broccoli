@@ -15,25 +15,25 @@ import java.awt.Dimension;
 
 import javax.swing.JTextField;
 
-public class myframe extends JFrame implements ActionListener {
+public class myframe2 extends JFrame implements ActionListener {
 
-    JButton button;
-    JTextField textFeild;
+    JButton button2;
+    JTextField text;
 
-    myframe() {
+    myframe2() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
         this.setTitle("Enter your name");
 
-        button = new JButton("Submit");
-        button.addActionListener(this);
+        button2 = new JButton("Submit");
+        button2.addActionListener(this);
 
-        textFeild = new JTextField();
-        textFeild.setPreferredSize(new Dimension(250, 100));
-        textFeild.setFont(new Font("MV Boli", Font.PLAIN, 30));
+        text = new JTextField();
+        text.setPreferredSize(new Dimension(250, 100));
+        text.setFont(new Font("MV Boli", Font.PLAIN, 30));
 
-        this.add(textFeild);
-        this.add(button);
+        this.add(text);
+        this.add(button2);
         this.pack();
         this.setVisible(true);
 
@@ -41,8 +41,8 @@ public class myframe extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == button) {
-            JOptionPane.showMessageDialog(null, "Welcome " + textFeild.getText());
+        if (e.getSource() == button2) {
+            JOptionPane.showMessageDialog(null, "Welcome " + text.getText());
         }
 
     }

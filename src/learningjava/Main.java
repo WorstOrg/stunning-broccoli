@@ -17,6 +17,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		myframe frame = new myframe();
+		myframe2 frame2 = new myframe2();
 
 		// JFrame mainframe = new JFrame(); // creating a frame or screen of the app
 		// mainframe.setTitle("TestFrame"); // title of the frane
