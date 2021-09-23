@@ -18,7 +18,9 @@ import javax.swing.JTextField;
 public class myframe extends JFrame implements ActionListener {
 
     JButton button;
+    JButton button2;
     JTextField textFeild;
+    JTextField text2;
 
     myframe() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -44,7 +46,6 @@ public class myframe extends JFrame implements ActionListener {
         if (e.getSource() == button) {
             JOptionPane.showMessageDialog(null, "Welcome " + textFeild.getText());
         }
-
     }
 
 }
