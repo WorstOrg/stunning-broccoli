@@ -7,6 +7,7 @@ import java.awt.FlowLayout;
 
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -16,8 +17,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 
 import javax.swing.JTextField;
+import javax.swing.border.Border;
 
 public class myframe extends JFrame implements ActionListener {
+
+    Border border = BorderFactory.createLineBorder(Color.GREEN, 3);
 
     JLabel botmsg = new JLabel();
     JButton button;
@@ -35,7 +39,9 @@ public class myframe extends JFrame implements ActionListener {
 
         botmsg.setText("This will be your name");
         botmsg.setHorizontalAlignment(JLabel.LEFT);
-        botmsg.setVerticalAlignment(JLabel.CENTER);
+        botmsg.setVerticalAlignment(JLabel.BOTTOM);
+        botmsg.setForeground(Color.WHITE);
+        botmsg.setFont(new Font("MV Boli", Font.PLAIN, 35));
 
         textFeild = new JTextField();
         textFeild.setPreferredSize(new Dimension(250, 100));
