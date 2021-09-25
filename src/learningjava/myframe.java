@@ -9,7 +9,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+import javax.swing.JLabel;
+
+import java.awt.Color;
 
 import java.awt.Dimension;
 
@@ -17,6 +19,7 @@ import javax.swing.JTextField;
 
 public class myframe extends JFrame implements ActionListener {
 
+    JLabel botmsg = new JLabel();
     JButton button;
     JButton button2;
     JTextField textFeild;
@@ -30,13 +33,19 @@ public class myframe extends JFrame implements ActionListener {
         button = new JButton("Submit");
         button.addActionListener(this);
 
+        botmsg.setText("This will be your name");
+        botmsg.setHorizontalAlignment(JLabel.LEFT);
+        botmsg.setVerticalAlignment(JLabel.CENTER);
+
         textFeild = new JTextField();
         textFeild.setPreferredSize(new Dimension(250, 100));
         textFeild.setFont(new Font("MV Boli", Font.PLAIN, 30));
 
+        this.setSize(1200, 800);
         this.add(textFeild);
         this.add(button);
-        this.pack();
+        this.add(botmsg);
+        this.getContentPane().setBackground(Color.DARK_GRAY);
         this.setVisible(true);
 
     }
@@ -44,7 +53,7 @@ public class myframe extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button) {
-            JOptionPane.showMessageDialog(null, "Welcome " + textFeild.getText());
+            botmsg.setText(textFeild.getText());
         }
     }
 
