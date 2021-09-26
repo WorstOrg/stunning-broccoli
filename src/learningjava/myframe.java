@@ -1,21 +1,15 @@
 package learningjava;
 
+import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
-
-import java.awt.FlowLayout;
-
 import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-
-import java.awt.Color;
-
-import java.awt.Dimension;
-
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
@@ -31,21 +25,23 @@ public class myframe extends JFrame implements ActionListener {
 
     myframe() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLayout(new FlowLayout());
+        this.setLayout(null);
         this.setTitle("Enter your name");
 
         button = new JButton("Submit");
         button.addActionListener(this);
+        button.setBounds(500, 200, 100, 55);
 
         botmsg.setText("This will be your name");
-        botmsg.setHorizontalAlignment(JLabel.LEFT);
-        botmsg.setVerticalAlignment(JLabel.BOTTOM);
         botmsg.setForeground(Color.WHITE);
         botmsg.setFont(new Font("MV Boli", Font.PLAIN, 35));
+
+        botmsg.setBounds(30, 330, 500, 100);
 
         textFeild = new JTextField();
         textFeild.setPreferredSize(new Dimension(250, 100));
         textFeild.setFont(new Font("MV Boli", Font.PLAIN, 30));
+        textFeild.setBounds(450, 150, 200, 40);
 
         this.setSize(1200, 800);
         this.add(textFeild);
