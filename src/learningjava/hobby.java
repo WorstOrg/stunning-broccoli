@@ -21,11 +21,17 @@ public class hobby extends JFrame implements ActionListener {
     JTextField textFeild;
     JLabel umsg = new JLabel();
     JLabel botmsg = new JLabel();
+    JLabel title = new JLabel();
 
     hobby() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setTitle("Enter hobby");
+
+        title.setText("You are entering your hobby");
+        title.setBounds(350, 50, 500, 40);
+        title.setFont(new Font("MV Boli", Font.PLAIN, 35));
+        title.setForeground(Color.WHITE);
 
         button = new JButton("Submit");
         button.addActionListener(this);
@@ -53,6 +59,7 @@ public class hobby extends JFrame implements ActionListener {
         this.add(umsg);
         this.add(botmsg);
         this.add(textFeild);
+        this.add(title);
 
     }
 
