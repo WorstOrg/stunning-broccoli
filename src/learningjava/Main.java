@@ -18,6 +18,7 @@ import java.awt.FlowLayout;
 
 public class Main {
 	public static void main(String[] args) {
-		myframe frame = new myframe();
+		name frame = new name();
+
 	}
 }
